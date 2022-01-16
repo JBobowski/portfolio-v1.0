@@ -55,81 +55,92 @@
                 <div class="col-sm-10">
                   <h3>Skills</h3>
                   <hr>
+                  <div class="row row-cols-2 g-2">
+                    <div class="col">
+                        <div class="card bg-transparent h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Languages</h5>
+  
+                                <div class="row">
+                                  <div class="col w-auto">
+                                    <ul class="list-group list-group-flush reference" id="reference">
+                                      <li class="list-group-item">Java/Javascript</li>
+                                      <li class="list-group-item">HTML5/CSS</li>
+                                      <li class="list-group-item">PHP/SQL/MySQL</li>
+                                      <li class="list-group-item">Python</li>
+                                      <li class="list-group-item">C++</li>
+                                    </ul>
+                                  </div>
+                                  <div class="col w-auto">
+                                    <ul class="list-group adjust" id="adjust">
+                                      <li class="list-group-item " style="height:100%;width:100%;">
+                                        <div class="progress active">
+                                          <div class="progress-bar progress-bar-striped progress-bar-animated bg-info java" id="java" style="width:0%;"></div>
+                                        </div>
+                                      </li>
+                                      <li class="list-group-item " style="height:100%;width:100%;">
+                                        <div class="progress active">
+                                          <div class="progress-bar progress-bar-striped progress-bar-animated bg-info html" id="html" style="width:0%;"></div>
+                                        </div>
+                                      </li>
+                                      <li class="list-group-item " style="height:100%;width:100%;">
+                                        <div class="progress active">
+                                          <div class="progress-bar progress-bar-striped progress-bar-animated bg-info php" id="php" style="width:0%;"></div>
+                                        </div>
+                                      </li>
+                                      <li class="list-group-item " style="height:100%;width:100%;">
+                                        <div class="progress active">
+                                          <div class="progress-bar progress-bar-striped progress-bar-animated bg-info python" id="python" style="width:0%;"></div>
+                                        </div>
+                                      </li>
+                                      <li class="list-group-item " style="height:100%;width:100%;">
+                                        <div class="progress active">
+                                          <div class="progress-bar progress-bar-striped progress-bar-animated bg-info c" id="c" style="width:0%;"></div>
+                                        </div>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-transparent h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Libraries</h5>
+                                
+                                <div class="row">
+                                  <div class="col w-auto">
+                                    <ul class="list-group list-group-flush reference2" id="reference2">
+                                      <li class="list-group-item">Bootstrap</li>
+                                      <li class="list-group-item">AnimeJS</li>
+                                    </ul>
+                                  </div>
+                                  <div class="col w-auto">
+                                    <ul class="list-group adjust2" id="adjust2">
+                                      <li class="list-group-item " style="height:100%;width:100%;">
+                                        <div class="progress active">
+                                          <div class="progress-bar progress-bar-striped progress-bar-animated bg-info bootstrap" id="bootstrap" style="width:0%;"></div>
+                                        </div>
+                                      </li>
+                                      <li class="list-group-item " style="height:100%;width:100%;">
+                                        <div class="progress active">
+                                          <div class="progress-bar progress-bar-striped progress-bar-animated bg-info animeJS" id="animeJS" style="width:0%;"></div>
+                                        </div>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="col-sm-1"></div>
               </div>
-
-              <div class="row">
-                <div class="col-sm-1"></div>
-                <div class="col-sm-2">
-                  <ul class="list-group list-group-flush reference">
-                    <li class="list-group-item">Java/Javascript</li>
-                    <li class="list-group-item">HTML5/CSS</li>
-                    <li class="list-group-item">PHP/SQL/MySQL</li>
-                    <li class="list-group-item">Python</li>
-                    <li class="list-group-item">C++</li>
-                  </ul>
-                </div>
-                <div class="col-sm-8">
-                  <ul class="list-group adjust">
-                    <li class="list-group-item " style="height:100%;width:100%;">
-                      <div class="progress active">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-info java" style="width:0%;"></div>
-                      </div>
-                    </li>
-                    <li class="list-group-item " style="height:100%;width:100%;">
-                      <div class="progress active">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-info html" style="width:0%;"></div>
-                      </div>
-                    </li>
-                    <li class="list-group-item " style="height:100%;width:100%;">
-                      <div class="progress active">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-info php" style="width:0%;"></div>
-                      </div>
-                    </li>
-                    <li class="list-group-item " style="height:100%;width:100%;">
-                      <div class="progress active">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-info python" style="width:0%;"></div>
-                      </div>
-                    </li>
-                    <li class="list-group-item " style="height:100%;width:100%;">
-                      <div class="progress active">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-info c" style="width:0%;"></div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-sm-1"></div>
-              </div>
-              
-            
           </div>
-    <script>
-      $(".java").animate({
-        width: "100%"
-      }, 2500);
-      $(".html").animate({
-        width: "100%"
-      }, 2500);
-      $(".php").animate({
-        width: "60%"
-      }, 2500);
-      $(".python").animate({
-        width: "60%"
-      }, 2500);
-      $(".c").animate({
-        width: "30%"
-      }, 2500);
-
-      $(document).ready(function(){
-        $(".adjust").css({
-          'height': ($(".reference").height()+'px')
-        });
-      });
-
-      
-
-    </script>
   </body>
 </html>
 <script src="../public/js/header.js"></script>
+<script src="../public/js/progressBars.js"></script>
