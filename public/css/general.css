@@ -99,3 +99,18 @@ body {
   transform: translateY(-50%);
 }
 
+.moveLetters{
+  position: relative;
+}
+.moveLetters .text-wrapper{
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  overflow: hidden;
+}
+.moveLetters .letter{
+  transform-origin: 0 100%;
+  display: inline-block;
+  line-height: 1em;
+}

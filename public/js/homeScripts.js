@@ -1,8 +1,8 @@
-var script = document.createElement('script');
+/*var script = document.createElement('script');
   script.type = 'text/javascript';
   script.src = '../node_modules/animejs/lib/anime.min.js';
   document.body.appendChild(script);
-
+*/
 
 var nameIntro = document.getElementById("nameIntro");
 var line1 = document.getElementById("line1");
