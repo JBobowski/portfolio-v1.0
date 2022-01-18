@@ -11,30 +11,309 @@
     <title>Home // JWorks</title>
   </head>
   <body>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-          <div id="mySidebar" class="sidebar">
-              <a class="togChoice">JDBobowski</a>
-              <a id="show1" href="file:///C:/Users/Joe/Documents/GitHub/portfolio-v1.0/views/index.html" class="togChoice">Home</a>
-              <a id="show2" href="file:///C:/Users/Joe/Documents/GitHub/portfolio-v1.0/views/experience.html" class="togChoice">Experience</a>
-              <a id="show3" href="file:///C:/Users/Joe/Documents/GitHub/portfolio-v1.0/views/projects.html" class="togChoice">Projects</a>
-              <a id="show4" href="file:///C:/Users/Joe/Documents/GitHub/portfolio-v1.0/views/about.html" class="togChoice">About</a>
-              <a id="show5" href="file:///C:/Users/Joe/Documents/GitHub/portfolio-v1.0/views/contact.html" class="togChoice">Contact</a>
-          </div>
-        
-          <div id="main" class="parent" style="margin-left: 200px; display:flex;">
+    <header>
+      <div class="hamburger-icon" id="icon">
+        <div class="icon-1" id="a"></div>
+        <div class="icon-2" id="b"></div>
+        <div class="icon-3" id="c"></div>
+        <div class="clear" id="clear"></div>
+      </div>
+      
+      <nav id="nav">
+     
+        <ul class="navList">
+          <li class="navListItem">
+            <a id="showHome" class="choice">Home</a>
+          </li>
+          <li class="navListItem">
+            <a id="showExp" class="choice">Experience</a>
+          </li>
+          <li class="navListItem">
+            <a id="showProj" class="choice">Projects</a>
+          </li>
+          <li class="navListItem">
+            <a id="showAbo" class="choice">About</a>
+          </li>
+          <li class="navListItem">
+            <a id="showCon" class="choice">Contact</a>
+          </li>
+        </ul>
+      
+      </nav>
+            
+      <!-- HOUSES ALL OF THE CONTENT FOR A SINGLE FILE PAGE -->
+      <section class="content">
 
-              <h1 class="nameIntro child" id="nameIntro">
-                <span class="text-wrapper" id="text-wrapper">
-                  <span class="line line1" id="line1"></span>
-                  <span class="letters letters-left" id="letters-left">Joseph</span>
-                  <span class="letters middle" id="middle">D.</span>
-                  <span class="letters letters-right" id="letters-right">Bobowski</span>
-                  <span class="line line2" id="line2"></span>
-                </span>
-              </h1>
-        
+        <!-- HOUSES THE CONTENT FOR THE HOME PAGE -->
+        <div id="homeDiv" style="display:block;">
+          <h1 class="nameIntro child" id="nameIntro">
+            <span class="text-wrapper" id="text-wrapper">
+            <span class="line line1" id="line1"></span>
+            <span class="letters letters-left" id="letters-left">Joseph</span>
+            <span class="letters middle" id="middle">D.</span>
+            <span class="letters letters-right" id="letters-right">Bobowski</span>
+            <span class="line line2" id="line2"></span>
+            </span>
+          </h1>
+        </div>
+
+        <!-- HOUSES THE CONTENT FOR THE EXPERIENCE PAGE-->
+        <div id="experienceDiv" style="display:none;">
+          
+          <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+              <h3>Employment</h3>
+              <hr>
+              <div class="card bg-transparent">
+                <div class="card-body">
+                    <h5 class="card-title">
+                      <a href="https://www.bayheadyachtclub.org/" target="_blank" style="text-decoration:none;color:black;">Bay Head Yacht Club</a>
+                      <i>&nbsp;-&nbsp;Bartender (Aug. 2019-Nov. 2021)</i>
+                    </h5>
+                    <p class="lead">
+                      I worked a variety of positions at the Bay Head Yacht Club (BHYC), including bartending, barbacking, dishwashing, preparation chef, etc. My responsibilies
+                    included, but were not limited to, stocking the bar, cleaning the bar, serving members, preparing/serving food for large events, preparing salads and horderves 
+                    for chefs working the line during dinner hours, scrubbing the kitchen floors, etc.
+                    </p>
+                </div>
+              </div>
+              
+            </div>
+            <div class="col-sm-1"></div>
           </div>
+          <br><br>
+
+          <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+              <h3>Skills</h3>
+              <hr>
+              <div class="row row-cols-2 g-2">
+                <div class="col">
+                    <div class="card bg-transparent h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Languages</h5>
+
+                            <div class="row">
+                              <div class="col w-auto h-auto">
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item bg-transparent">Java/Javascript</li>
+                                  <li class="list-group-item bg-transparent">HTML5/CSS</li>
+                                  <li class="list-group-item bg-transparent">PHP/SQL/MySQL</li>
+                                  <li class="list-group-item bg-transparent">Python</li>
+                                  <li class="list-group-item bg-transparent">C++</li>
+                                </ul>
+                              </div>
+                              <div class="col w-auto">
+                                <ul class="list-group h-100">
+                                  <li class="list-group-item bg-transparent" style="height:100%;width:100%;">
+                                    <div class="progress active h-100" style="background-color:#F0F8FF;">
+                                      <div class="progress-bar progress-bar-striped progress-bar-animated bg-info java" id="java" style="width:0%;"></div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item bg-transparent" style="height:100%;width:100%;">
+                                    <div class="progress active h-100" style="background-color:#F0F8FF;">
+                                      <div class="progress-bar progress-bar-striped progress-bar-animated bg-info html" id="html" style="width:0%;"></div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item bg-transparent" style="height:100%;width:100%;">
+                                    <div class="progress active h-100" style="background-color:#F0F8FF;">
+                                      <div class="progress-bar progress-bar-striped progress-bar-animated bg-info php" id="php" style="width:0%;"></div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item bg-transparent" style="height:100%;width:100%;">
+                                    <div class="progress active h-100" style="background-color:#F0F8FF;">
+                                      <div class="progress-bar progress-bar-striped progress-bar-animated bg-info python" id="python" style="width:0%;"></div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item bg-transparent" style="height:100%;width:100%;">
+                                    <div class="progress active h-100" style="background-color:#F0F8FF;">
+                                      <div class="progress-bar progress-bar-striped progress-bar-animated bg-info c+" id="c+" style="width:0%;"></div>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-transparent h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Libraries</h5>
+                            
+                            <div class="row">
+                              <div class="col w-auto">
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item bg-transparent">Bootstrap</li>
+                                  <li class="list-group-item bg-transparent">AnimeJS</li>
+                                </ul>
+                              </div>
+                              <div class="col w-auto h-auto">
+                                <ul class="list-group h-100" id="adjust2">
+                                  <li class="list-group-item bg-transparent" style="height:100%;width:100%;">
+                                    <div class="progress active h-100" style="background-color:#F0F8FF;">
+                                      <div class="progress-bar progress-bar-striped progress-bar-animated bg-info bootstrap" id="bootstrap" style="width:0%;"></div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item bg-transparent" style="height:100%;width:100%;">
+                                    <div class="progress active h-100" style="background-color:#F0F8FF;">
+                                      <div class="progress-bar progress-bar-striped progress-bar-animated bg-info animeJS" id="animeJS" style="width:0%;"></div>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-1"></div>
+          </div>
+
+        </div>
+
+        <!-- HOUSES THE CONTENT FOR THE PROJECTS PAGE -->
+        <div id="projectsDiv" style="display:none;">
+          
+          <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+              <div class="row row-cols-3 g-2">
+                <div class="col">
+                    <div class="card bg-transparent h-100">
+                      <h4 class="card-header card-title">DAWN</h4>
+                      <div class="card-body">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAWN is an acronym which stands for the Depression Anxiety and Wellness Network. Originally this project was developed by a team of four students 
+                        a few hours each day during our computer science and software engineering courses. The intent and original mission plan were simple in the beginning; 
+                        develop a resource that students of Point Pleasant Borough High School would be able to use whenever they were feeling negatively 
+                        effected.
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Since then, our team now consists of three members: two co-developers and one project manager.  
+                        However, since all team members are currently undergraduate students in college, our main priority is providing the most effective experience for our users. 
+                        While growing a larger platform may have been put on the backburner for now, there is no doubt that we will be trying to expand and offer this software to 
+                        all people who could benefit from it.
+                        <br>
+                        <a href="https://www.mentalhealth-dawn.org/" class="btn btn-sm w-100" id="projButton" role="button" aria-pressed="true" target="_blank">Open DAWN</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                  <div class="card bg-transparent h-100">
+                    <h4 class="card-header card-title">Project 2</h4>
+                    <div class="card-body">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[placeholder text for now]
+                      <br>
+                      <a href="#" class="btn btn-sm w-100 disabled" id="projButton" role="button" aria-pressed="true">Currently Under Reconstruction</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card bg-transparent h-100">
+                    <h4 class="card-header card-title">Project 3</h4>
+                    <div class="card-body">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[placeholder text for now]
+                      <br>
+                      <a href="#" class="btn btn-sm w-100 disabled" id="projButton" role="button" aria-pressed="true">Currently Under Reconstruction</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-1"></div>
+          </div>
+
+        </div>
+
+        <!-- HOUSES THE CONTENT FOR THE ABOUT PAGE -->
+        <div id="aboutDiv" style="display:none;">
+          
+          <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+              <div class="row row-cols-3 g-2">
+                <div class="col">
+                    <div class="card bg-transparent h-100">
+                      <h4 class="card-header card-title">Myself</h4>
+                      <div class="card-body">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello, my name is Joe Bobowski, currently an undergraduate pursuing an associate's degree in Computer Science 
+                        from Ocean County College. The spring semester of 2022 will be my last semester at Ocean County College and I intend to pursue a bachelor's 
+                        degree in Computer Science specializing in Artificial Intelligence. My goal is to one day make great strides in AI and work to advance today's 
+                        technology to the next level.
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-transparent h-100">
+                      <h4 class="card-header card-title">Schooling</h4>
+                      <div class="card-body">
+                        <p>
+                          Current School: Ocean County College
+                        </p>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item bg-transparent">Courses:</li>
+                          <li class="list-group-item bg-transparent">ECON-151 Macroeconomics</li>
+                          <li class="list-group-item bg-transparent">ECON-152 Microeconomics</li>
+                          <li class="list-group-item bg-transparent">MATH-267 Calculus III</li>
+                          <li class="list-group-item bg-transparent">MATH-270 Discrete Mathematics</li>
+                          <li class="list-group-item bg-transparent">CSIT-265 Data Structures &amp; Analysis</li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                  <div class="card bg-transparent h-100">
+                    <h4 class="card-header card-title">The Future</h4>
+                    <div class="card-body">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item bg-transparent">
+                          Apply for CS Internships
+                          <input class="form-check-input" type="checkbox" value="" style="float:right;" checked disabled>
+                        </li>
+                        <li class="list-group-item bg-transparent">
+                          Work as a CS Intern
+                          <input class="form-check-input" type="checkbox" value="" style="float:right;" disabled>
+                        </li>
+                        <li class="list-group-item bg-transparent">
+                          Apply to Bachelor's Degree Schools
+                          <input class="form-check-input" type="checkbox" value="" style="float:right;" checked disabled>
+                        </li>
+                        <li class="list-group-item bg-transparent">
+                          Achieve Bachelor's Degree
+                          <input class="form-check-input" type="checkbox" value="" style="float:right;" disabled>
+                        </li>
+                        <li class="list-group-item bg-transparent">
+                          Apply to Master's Degree Schools
+                          <input class="form-check-input" type="checkbox" value="" style="float:right;" disabled>
+                        </li>
+                        <li class="list-group-item bg-transparent">
+                          Achieve Master's Degree
+                          <input class="form-check-input" type="checkbox" value="" style="float:right;" disabled>
+                        </li>
+                        <li class="list-group-item bg-transparent">
+                          Find a job within AI
+                          <input class="form-check-input" type="checkbox" value="" style="float:right;" disabled>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-1"></div>
+          </div>
+
+        </div>
+
+        <!-- HOUSES THE CONTENT FOR THE CONTACT PAGE -->
+        <div id="contactDiv" style="display:none;">
+          <p class="lead">Testing subtext</p>
+        </div>
+      </section>
+    </header>
   </body>
 </html>
-<script src="../public/js/homeScripts.js"></script>
+<script src="../public/js/generalScripts.js"></script>
