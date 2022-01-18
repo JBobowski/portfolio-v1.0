@@ -11,30 +11,73 @@
     <title>Home // JWorks</title>
   </head>
   <body>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-          <div id="mySidebar" class="sidebar">
-              <a class="togChoice">JDBobowski</a>
-              <a id="show1" href="file:///C:/Users/Joe/Documents/GitHub/portfolio-v1.0/views/index.html" class="togChoice">Home</a>
-              <a id="show2" href="file:///C:/Users/Joe/Documents/GitHub/portfolio-v1.0/views/experience.html" class="togChoice">Experience</a>
-              <a id="show3" href="file:///C:/Users/Joe/Documents/GitHub/portfolio-v1.0/views/projects.html" class="togChoice">Projects</a>
-              <a id="show4" href="file:///C:/Users/Joe/Documents/GitHub/portfolio-v1.0/views/about.html" class="togChoice">About</a>
-              <a id="show5" href="file:///C:/Users/Joe/Documents/GitHub/portfolio-v1.0/views/contact.html" class="togChoice">Contact</a>
-          </div>
-        
-          <div id="main" class="parent" style="margin-left: 200px; display:flex;">
+    <header>
+  
+      <div class="hamburger-icon" id="icon">
+        <div class="icon-1" id="a"></div>
+        <div class="icon-2" id="b"></div>
+        <div class="icon-3" id="c"></div>
+        <div class="clear" id="clear"></div>
+      </div>
+      <nav id="nav">
+     
+        <ul>
+          <li>
+            <a id="showHome" href="file:///C:/Users/Joe/Documents/GitHub/portfolio-v1.0/views/index.html" style="text-decoration:none;">Home</a>
+          </li>
+          <li>
+            <a id="showExp" class="togChoice">Experience</a>
+          </li>
+          <li>
+            <a id="showProj" class="togChoice">Projects</a>
+          </li>
+          <li>
+            <a id="showAbo" class="togChoice">About</a>
+          </li>
+          <li>
+            <a id="showCon" class="togChoice">Contact</a>
+          </li>
+        </ul>
+      
+      </nav>
+            
+      <!-- HOUSES ALL OF THE CONTENT FOR A SINGLE FILE PAGE -->
+      <section class="content">
 
-              <h1 class="nameIntro child" id="nameIntro">
-                <span class="text-wrapper" id="text-wrapper">
-                  <span class="line line1" id="line1"></span>
-                  <span class="letters letters-left" id="letters-left">Joseph</span>
-                  <span class="letters middle" id="middle">D.</span>
-                  <span class="letters letters-right" id="letters-right">Bobowski</span>
-                  <span class="line line2" id="line2"></span>
-                </span>
-              </h1>
-        
-          </div>
+        <!-- HOUSES THE CONTENT FOR THE HOME PAGE -->
+        <div id="homeDiv" style="display:block;">
+          <h1 class="nameIntro child" id="nameIntro">
+            <span class="text-wrapper" id="text-wrapper">
+            <span class="line line1" id="line1"></span>
+            <span class="letters letters-left" id="letters-left">Joseph</span>
+            <span class="letters middle" id="middle">D.</span>
+            <span class="letters letters-right" id="letters-right">Bobowski</span>
+            <span class="line line2" id="line2"></span>
+            </span>
+          </h1>
+        </div>
+
+        <!-- HOUSES THE CONTENT FOR THE EXPERIENCE PAGE-->
+        <div id="experienceDiv" style="display:none;">
+          fuck me
+        </div>
+
+        <!-- HOUSES THE CONTENT FOR THE PROJECTS PAGE -->
+        <div id="projectsDiv" style="display:none;">
+          sheeeesh
+        </div>
+
+        <!-- HOUSES THE CONTENT FOR THE ABOUT PAGE -->
+        <div id="aboutDiv" style="display:none;">
+          ryan is high
+        </div>
+
+        <!-- HOUSES THE CONTENT FOR THE CONTACT PAGE -->
+        <div id="contactDiv" style="display:none;">
+          valorant
+        </div>
+      </section>
+    </header>
   </body>
 </html>
 <script src="../public/js/homeScripts.js"></script>
