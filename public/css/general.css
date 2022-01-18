@@ -99,32 +99,7 @@ nav {
 .choice:hover {
     color: black;
 }
-/*
-nav ul {
-    margin: 0;
-    position: absolute;
-    top: 30%;
-    left: 40%;
-    list-style-type:none;
-}
-nav ul li a{
-    font-size: 24px;
-    color: #F0F8FF;
-    line-height: 2.2;
-    text-transform: uppercase;
-    letter-spacing: 1.7px;
 
-    padding: 4px 0px 4px 32px;
-    text-decoration: none;
-    display: block;
-    transition: 0.3s;
-    cursor: pointer;
-
-}
-nav ul li a:hover {
-    color: black;
-}
-*/
 /* ANIMATES THE NAVBAR COMING INTO VIEW */
 nav.show {
     opacity: 0;
@@ -180,4 +155,14 @@ nav.show {
 .nameIntro .letters {
     display: inline-block;
     opacity: 0;
+}
+
+/* PROJECT PAGE BUTTONS */
+#projButton {
+    bottom:0;
+    background-color:#1E90FF;
+    color:white;
+}
+#projButton:hover {
+    background-color:#4169E1;
 }

@@ -28,7 +28,7 @@ var javaBar = document.getElementById("java");
 var htmlBar = document.getElementById("html");
 var phpBar = document.getElementById("php");
 var pyBar = document.getElementById("python");
-var cBar = document.getElementById("c");
+var cBar = document.getElementById("c+");
 
 
 
@@ -39,45 +39,54 @@ var ajsBar = document.getElementById("animeJS");
 
 //separate timeline animations to ensure they all run at the same time
 var bar1 = anime.timeline({
-  loop: false,
   autoplay: false,
-  targets: [javaBar, htmlBar],
-  width: 100,
-  easing: 'linear',
-  duration: 1500
+  duration: 1000,
 });
+  bar1.add({
+    targets: [javaBar, htmlBar],
+    width: 100,
+    easing: 'linear',
+  });
+
 var bar2 = anime.timeline({
-  loop: false,
   autoplay: false,
-  targets: [phpBar, pyBar],
-  width: 60,
-  easing: 'linear',
-  duration: 1500
+  duration: 1000,
 });
+  bar2.add({
+    targets: [phpBar, pyBar],
+    width: 60,
+    easing: 'linear',
+  });
+
 var bar3 = anime.timeline({
-  loop: false,
   autoplay: false,
-  targets: [cBar],
-  width: 30,
-  easing: 'linear',
-  duration: 1500
+  duration: 1000,
 });
+  bar3.add({
+    targets: [cBar],
+    width: 30,
+    easing: 'linear',
+  });
+
 var bar4 = anime.timeline({
-  loop: false,
   autoplay: false,
-  targets: [bootBar],
-  width: 90,
-  easing: 'linear',
-  duration: 1500
+  duration: 1000,
 });
+  bar4.add({
+    targets: [bootBar],
+    width: 90,
+    easing: 'linear',
+  });
+
 var bar5 = anime.timeline({
-  loop: false,
   autoplay: false,
-  targets: [ajsBar],
-  width: 40,
-  easing: 'linear',
-  duration: 1500
+  duration: 1000,
 });
+  bar5.add({
+    targets: [ajsBar],
+    width: 40,
+    easing: 'linear',
+  });
 
 
 (function($) {
@@ -114,6 +123,12 @@ var bar5 = anime.timeline({
     icon2.classList.toggle('c');
     icon3.classList.toggle('b');
     nav.classList.toggle("show");
+
+    bar1.play();
+    bar2.play();
+    bar3.play();
+    bar4.play();
+    bar5.play();
   });
   $('#showProj').click(function () {
     homeDiv.style.display = "none";
@@ -127,11 +142,7 @@ var bar5 = anime.timeline({
     icon3.classList.toggle('b');
     nav.classList.toggle("show");    
 
-    bar1.play();
-    bar2.play();
-    bar3.play();
-    bar4.play();
-    bar5.play();
+    
   });
   $('#showAbo').click(function () {
     homeDiv.style.display = "none";
