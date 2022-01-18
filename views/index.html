@@ -4,14 +4,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="../public/css/general.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../node_modules/animejs/lib/anime.js"></script>
     
-    <title>Home // JWorks</title>
+    <title>JDB // Portfolio</title>
   </head>
   <body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
     <header>
+
+
       <div class="hamburger-icon" id="icon">
         <div class="icon-1" id="a"></div>
         <div class="icon-2" id="b"></div>
@@ -19,7 +25,7 @@
         <div class="clear" id="clear"></div>
       </div>
       
-      <nav id="nav">
+      <nav id="nav" class="sideNav">
      
         <ul class="navList">
           <li class="navListItem">
@@ -182,46 +188,50 @@
           <div class="row">
             <div class="col-sm-1"></div>
             <div class="col-sm-10">
-              <div class="row row-cols-3 g-2">
-                <div class="col">
-                    <div class="card bg-transparent h-100">
-                      <h4 class="card-header card-title">DAWN</h4>
-                      <div class="card-body">
+
+              <div class="card bg-transparent">
+                <div class="card-header">
+                  <ul class="nav nav-tabs card-header-tabs" id="projects-list" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active projects lead" href="#dawn" role="tab" aria-controls="dawn" aria-selected="true">DAWN</a>
+                    </li>
+                    <!--
+                      <li class="nav-item">
+                        <a class="nav-link"  href="#project2" role="tab" aria-controls="project2" aria-selected="false">Project 2</a>
+                      </li>
+                    -->
+                  </ul>
+                </div>
+                <div class="card-body">
+                  
+                  <div class="tab-content mt-3">
+                    <div class="tab-pane active" id="dawn" role="tabpanel">
+                      <p class="card-text lead">
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAWN is an acronym which stands for the Depression Anxiety and Wellness Network. Originally this project was developed by a team of four students 
                         a few hours each day during our computer science and software engineering courses. The intent and original mission plan were simple in the beginning; 
-                        develop a resource that students of Point Pleasant Borough High School would be able to use whenever they were feeling negatively 
+                        develop a resource that students of Point Pleasant Borough High School would be able to use whenever they were depressed, anxious, or otherwise negatively 
                         effected.
                         <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Since then, our team now consists of three members: two co-developers and one project manager.  
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Since then, our team now consists of three members: two co-developers and one project manager. We have since redesigned DAWN a handful of times, improving 
+                        functionality, database structuring, user experience, the addition and removal of features, etc., all while staying within HIPAA guidelines. Furthermore, 
+                        we've expanded past Point Pleasant Borough High School and have offered our software to other schools in Ocean County, growing a community in the process. 
                         However, since all team members are currently undergraduate students in college, our main priority is providing the most effective experience for our users. 
                         While growing a larger platform may have been put on the backburner for now, there is no doubt that we will be trying to expand and offer this software to 
                         all people who could benefit from it.
-                        <br>
-                        <a href="https://www.mentalhealth-dawn.org/" class="btn btn-sm w-100" id="projButton" role="button" aria-pressed="true" target="_blank">Open DAWN</a>
+                      </p>
+                      <center><a href="https://www.mentalhealth-dawn.org/" class="btn btn-primary" role="button" aria-pressed="true" target="_blank" style="width:80%;">Open DAWN</a></center>
+                    </div>
+                      
+                    <!--
+                      <div class="tab-pane" id="project2" role="tabpanel" aria-labelledby="project2-tab">  
+                        <p class="card-text lead">[this is placeholder text]</p>
+                        <center><a href="#" class="btn btn-primary disabled" role="button" aria-pressed="true" style="width:80%;">Currently Under Reconstruction</a></center>
                       </div>
-                    </div>
-                </div>
-                <div class="col">
-                  <div class="card bg-transparent h-100">
-                    <h4 class="card-header card-title">Project 2</h4>
-                    <div class="card-body">
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[placeholder text for now]
-                      <br>
-                      <a href="#" class="btn btn-sm w-100 disabled" id="projButton" role="button" aria-pressed="true">Currently Under Reconstruction</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card bg-transparent h-100">
-                    <h4 class="card-header card-title">Project 3</h4>
-                    <div class="card-body">
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[placeholder text for now]
-                      <br>
-                      <a href="#" class="btn btn-sm w-100 disabled" id="projButton" role="button" aria-pressed="true">Currently Under Reconstruction</a>
-                    </div>
+                    -->
                   </div>
                 </div>
               </div>
+
             </div>
             <div class="col-sm-1"></div>
           </div>
@@ -237,8 +247,8 @@
               <div class="row row-cols-3 g-2">
                 <div class="col">
                     <div class="card bg-transparent h-100">
-                      <h4 class="card-header card-title">Myself</h4>
-                      <div class="card-body">
+                      <h4 class="card-header card-title display-6">Myself</h4>
+                      <div class="card-body lead">
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello, my name is Joe Bobowski, currently an undergraduate pursuing an associate's degree in Computer Science 
                         from Ocean County College. The spring semester of 2022 will be my last semester at Ocean County College and I intend to pursue a bachelor's 
                         degree in Computer Science specializing in Artificial Intelligence. My goal is to one day make great strides in AI and work to advance today's 
@@ -248,8 +258,8 @@
                 </div>
                 <div class="col">
                     <div class="card bg-transparent h-100">
-                      <h4 class="card-header card-title">Schooling</h4>
-                      <div class="card-body">
+                      <h4 class="card-header card-title display-6">Schooling</h4>
+                      <div class="card-body lead">
                         <p>
                           Current School: Ocean County College
                         </p>
@@ -266,8 +276,8 @@
                 </div>
                 <div class="col">
                   <div class="card bg-transparent h-100">
-                    <h4 class="card-header card-title">The Future</h4>
-                    <div class="card-body">
+                    <h4 class="card-header card-title display-6">The Future</h4>
+                    <div class="card-body lead">
                       <ul class="list-group list-group-flush">
                         <li class="list-group-item bg-transparent">
                           Apply for CS Internships
