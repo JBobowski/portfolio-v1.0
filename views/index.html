@@ -4,14 +4,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="../public/css/general.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../node_modules/animejs/lib/anime.js"></script>
     
-    <title>Home // JWorks</title>
+    <title>JDB // Portfolio</title>
   </head>
   <body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
     <header>
+
+
       <div class="hamburger-icon" id="icon">
         <div class="icon-1" id="a"></div>
         <div class="icon-2" id="b"></div>
@@ -19,9 +25,9 @@
         <div class="clear" id="clear"></div>
       </div>
       
-      <nav id="nav">
+      <nav id="nav" class="sideNav">
      
-        <ul class="navList">
+        <ul class="navList" style="height:50%;">
           <li class="navListItem">
             <a id="showHome" class="choice">Home</a>
           </li>
@@ -34,10 +40,11 @@
           <li class="navListItem">
             <a id="showAbo" class="choice">About</a>
           </li>
-          <li class="navListItem">
-            <a id="showCon" class="choice">Contact</a>
+          <li class="navListItem" style="position: absolute;bottom: 0px;">
+            <a class="emailNav"><i>jdbobowski@gmail.com</i></a>
           </li>
         </ul>
+        
       
       </nav>
             
@@ -55,6 +62,28 @@
             <span class="line line2" id="line2"></span>
             </span>
           </h1>
+          <div class="underneath">
+            <div class="row">
+              <div class="col w-auto">
+                <a href="https://github.com/JBobowski" target="_blank" class="btn btn-secondary mx-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                  </svg>
+                </a>
+                
+              </div>
+              <div class="col w-auto">
+                <a href="https://www.linkedin.com/in/joseph-bobowski-008b5819b" target="_blank" class="btn btn-primary mx-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"></path>
+                  </svg>
+                </a>
+              </div>
+              <div class="col-sm-6" style="position:relative;display:flex;justify-content:center;">
+                <p class="lead" style="position: absolute;top:50%;"><i>jdbobowski@gmail.com</i></p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- HOUSES THE CONTENT FOR THE EXPERIENCE PAGE-->
@@ -182,46 +211,50 @@
           <div class="row">
             <div class="col-sm-1"></div>
             <div class="col-sm-10">
-              <div class="row row-cols-3 g-2">
-                <div class="col">
-                    <div class="card bg-transparent h-100">
-                      <h4 class="card-header card-title">DAWN</h4>
-                      <div class="card-body">
+
+              <div class="card bg-transparent">
+                <div class="card-header">
+                  <ul class="nav nav-tabs card-header-tabs" id="projects-list" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active projects lead" href="#dawn" role="tab" aria-controls="dawn" aria-selected="true">DAWN</a>
+                    </li>
+                    <!--
+                      <li class="nav-item">
+                        <a class="nav-link"  href="#project2" role="tab" aria-controls="project2" aria-selected="false">Project 2</a>
+                      </li>
+                    -->
+                  </ul>
+                </div>
+                <div class="card-body">
+                  
+                  <div class="tab-content mt-3">
+                    <div class="tab-pane active" id="dawn" role="tabpanel">
+                      <p class="card-text lead">
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAWN is an acronym which stands for the Depression Anxiety and Wellness Network. Originally this project was developed by a team of four students 
                         a few hours each day during our computer science and software engineering courses. The intent and original mission plan were simple in the beginning; 
-                        develop a resource that students of Point Pleasant Borough High School would be able to use whenever they were feeling negatively 
+                        develop a resource that students of Point Pleasant Borough High School would be able to use whenever they were depressed, anxious, or otherwise negatively 
                         effected.
                         <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Since then, our team now consists of three members: two co-developers and one project manager.  
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Since then, our team now consists of three members: two co-developers and one project manager. We have since redesigned DAWN a handful of times, improving 
+                        functionality, database structuring, user experience, the addition and removal of features, etc., all while staying within HIPAA guidelines. Furthermore, 
+                        we've expanded past Point Pleasant Borough High School and have offered our software to other schools in Ocean County, growing a community in the process. 
                         However, since all team members are currently undergraduate students in college, our main priority is providing the most effective experience for our users. 
                         While growing a larger platform may have been put on the backburner for now, there is no doubt that we will be trying to expand and offer this software to 
                         all people who could benefit from it.
-                        <br>
-                        <a href="https://www.mentalhealth-dawn.org/" class="btn btn-sm w-100" id="projButton" role="button" aria-pressed="true" target="_blank">Open DAWN</a>
+                      </p>
+                      <center><a href="https://www.mentalhealth-dawn.org/" class="btn btn-primary" role="button" aria-pressed="true" target="_blank" style="width:80%;">Open DAWN</a></center>
+                    </div>
+                      
+                    <!--
+                      <div class="tab-pane" id="project2" role="tabpanel" aria-labelledby="project2-tab">  
+                        <p class="card-text lead">[this is placeholder text]</p>
+                        <center><a href="#" class="btn btn-primary disabled" role="button" aria-pressed="true" style="width:80%;">Currently Under Reconstruction</a></center>
                       </div>
-                    </div>
-                </div>
-                <div class="col">
-                  <div class="card bg-transparent h-100">
-                    <h4 class="card-header card-title">Project 2</h4>
-                    <div class="card-body">
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[placeholder text for now]
-                      <br>
-                      <a href="#" class="btn btn-sm w-100 disabled" id="projButton" role="button" aria-pressed="true">Currently Under Reconstruction</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card bg-transparent h-100">
-                    <h4 class="card-header card-title">Project 3</h4>
-                    <div class="card-body">
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[placeholder text for now]
-                      <br>
-                      <a href="#" class="btn btn-sm w-100 disabled" id="projButton" role="button" aria-pressed="true">Currently Under Reconstruction</a>
-                    </div>
+                    -->
                   </div>
                 </div>
               </div>
+
             </div>
             <div class="col-sm-1"></div>
           </div>
@@ -234,11 +267,197 @@
           <div class="row">
             <div class="col-sm-1"></div>
             <div class="col-sm-10">
+
+
+              <div class="card bg-transparent">
+                <div class="card-header">
+                  <ul class="nav nav-tabs card-header-tabs" id="schoolList" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active schools lead" href="#associate" role="tab" aria-controls="associate" aria-selected="true">ASSOCIATE'S DEGREE</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link schools lead" href="#bachelor" role="tab" aria-controls="bachelor" aria-selected="false">BACHELOR'S DEGREE</a>
+                    </li>
+                    <!--
+                      <li class="nav-item">
+                        <a class="nav-link"  href="#project2" role="tab" aria-controls="project2" aria-selected="false">Project 2</a>
+                      </li>
+                    -->
+                  </ul>
+                </div>
+                <div class="card-body">
+                  
+                  <div class="tab-content mt-3">
+                    <div class="tab-pane active" id="associate" role="tabpanel">
+                      <p class="card-text lead">
+                        <table class="table table-bordered border border-secondary">
+                          <thead>
+                            <tr>
+                              <th colspan="3">Trimester 1 - Fall 2020</th>
+                              <th colspan="3">Semester 1 - Spring 2021</th>
+                              <th colspan="3">Semester 2 - Fall 2021</th>
+                              <th colspan="3">Semester 3 - Spring 2022</th>
+                            </tr>
+                            <tr>
+                              <th scope="col">Course Code</th>
+                              <th scope="col">Course Name</th>
+                              <th scope="col">Credits</th>
+
+                              <th scope="col">Course Code</th>
+                              <th scope="col">Course Name</th>
+                              <th scope="col">Credits</th>
+
+                              <th scope="col">Course Code</th>
+                              <th scope="col">Course Name</th>
+                              <th scope="col">Credits</th>
+
+                              <th scope="col">Course Code</th>
+                              <th scope="col">Course Name</th>
+                              <th scope="col">Credits</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>CI-101</td>
+                              <td>Computing and Informatics Design I</td>
+                              <td>2</td>
+
+                              <td>CSIT-165</td>
+                              <td>Programming I</td>
+                              <td>4</td>
+
+                              <td>CSIT-166</td>
+                              <td>Programming II</td>
+                              <td>4</td>
+
+                              <td>ECON-151</td>
+                              <td>Macroeconomics</td>
+                              <td>3</td>
+                            </tr>
+                            <tr>
+                              <td>CS-164</td>
+                              <td>Introduction to Computer Science</td>
+                              <td>3</td>
+
+                              <td>ENGL-152</td>
+                              <td>English II</td>
+                              <td>3</td>
+
+                              <td>CSIT-176</td>
+                              <td>Computer Organization</td>
+                              <td>3</td>
+                              
+                              <td>ECON-152</td>
+                              <td>Microeconomics</td>
+                              <td>3</td>
+                            </tr>
+                            <tr>
+                              <td>ENGL-111</td>
+                              <td>English Composition I</td>
+                              <td>3</td>
+
+                              <td>MATH-265</td>
+                              <td>Calculus I</td>
+                              <td>4</td>
+
+                              <td>CSIT-212</td>
+                              <td>Systems Analysis</td>
+                              <td>3</td>
+                              
+                              <td>MATH-267</td>
+                              <td>Calculus III</td>
+                              <td>4</td>
+                            </tr>
+                            <tr>
+                              <td>MATH-121</td>
+                              <td>Calculus I</td>
+                              <td>4</td>
+
+                              <td>PHYS-281</td>
+                              <td>General Physics I</td>
+                              <td>4</td>
+
+                              <td>MATH-266</td>
+                              <td>Calculus II</td>
+                              <td>4</td>
+                              
+                              <td>MATH-270</td>
+                              <td>Discrete Mathematics</td>
+                              <td>3</td>
+                            </tr>
+                            <tr>
+                              <td>UNIV-CI101</td>
+                              <td>The Drexel Experience</td>
+                              <td>1</td>
+
+                              <td>PHYS-281L</td>
+                              <td>Lab-General Physics I</td>
+                              <td>0</td>
+
+                              <td>SPAN-151</td>
+                              <td>Elementary Spanish I</td>
+                              <td>3</td>
+                              
+                              <td>CSIT-265</td>
+                              <td>Data Structures</td>
+                              <td>4</td>
+                            </tr>
+                            <tr>
+                              <td>---</td>
+                              <td>Science Lab</td>
+                              <td>4.5</td>
+
+                              <td>STSC-150</td>
+                              <td>Student Success Seminar</td>
+                              <td>2</td>
+
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td colspan="2">Total:</td>
+                              <td>17.5</td>
+
+                              <td colspan="2">Total:</td>
+                              <td>17</td>
+
+                              <td colspan="2">Total:</td>
+                              <td>17</td>
+                              
+                              <td colspan="2">Total:</td>
+                              <td>17</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </p>
+                    </div>
+                    <div class="tab-pane" id="bachelor" role="tabpanel">
+                      <p class="card-text lead">
+                        Bachelor's Stuff
+                      </p>
+                    </div>
+                      
+                    <!--
+                      <div class="tab-pane" id="project2" role="tabpanel" aria-labelledby="project2-tab">  
+                        <p class="card-text lead">[this is placeholder text]</p>
+                        <center><a href="#" class="btn btn-primary disabled" role="button" aria-pressed="true" style="width:80%;">Currently Under Reconstruction</a></center>
+                      </div>
+                    -->
+                  </div>
+                </div>
+              </div>
+
+<!--
               <div class="row row-cols-3 g-2">
                 <div class="col">
                     <div class="card bg-transparent h-100">
-                      <h4 class="card-header card-title">Myself</h4>
-                      <div class="card-body">
+                      <h4 class="card-header card-title display-6">Myself</h4>
+                      <div class="card-body lead">
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello, my name is Joe Bobowski, currently an undergraduate pursuing an associate's degree in Computer Science 
                         from Ocean County College. The spring semester of 2022 will be my last semester at Ocean County College and I intend to pursue a bachelor's 
                         degree in Computer Science specializing in Artificial Intelligence. My goal is to one day make great strides in AI and work to advance today's 
@@ -248,8 +467,8 @@
                 </div>
                 <div class="col">
                     <div class="card bg-transparent h-100">
-                      <h4 class="card-header card-title">Schooling</h4>
-                      <div class="card-body">
+                      <h4 class="card-header card-title display-6">Schooling</h4>
+                      <div class="card-body lead">
                         <p>
                           Current School: Ocean County College
                         </p>
@@ -266,8 +485,8 @@
                 </div>
                 <div class="col">
                   <div class="card bg-transparent h-100">
-                    <h4 class="card-header card-title">The Future</h4>
-                    <div class="card-body">
+                    <h4 class="card-header card-title display-6">The Future</h4>
+                    <div class="card-body lead">
                       <ul class="list-group list-group-flush">
                         <li class="list-group-item bg-transparent">
                           Apply for CS Internships
@@ -302,15 +521,11 @@
                   </div>
                 </div>
               </div>
+            -->
             </div>
             <div class="col-sm-1"></div>
           </div>
 
-        </div>
-
-        <!-- HOUSES THE CONTENT FOR THE CONTACT PAGE -->
-        <div id="contactDiv" style="display:none;">
-          <p class="lead">Testing subtext</p>
         </div>
       </section>
     </header>

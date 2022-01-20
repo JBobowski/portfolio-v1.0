@@ -6,7 +6,7 @@ body {
 /* DIV CONTAINING ALL THE CONTENT FOR THE PAGE */
 header {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background: #F0EAD6;
     position: absolute;
     overflow-x: hidden;
@@ -61,7 +61,7 @@ header {
 }
 
 /* HOUSES NAVBAR CONTENT */
-nav {
+.sideNav {
     background: #87CEFA;
     position: absolute;
     top: 0;
@@ -98,6 +98,18 @@ nav {
 }
 .choice:hover {
     color: black;
+}
+.emailNav {
+    color: #F0F8FF;
+    line-height: 2.2;
+    text-transform: lowercase;
+    letter-spacing: 1.7px;
+    padding: 4px 0px 4px 32px;
+    text-decoration: none;
+    display: block;
+}
+.emailNav:hover {
+    color: #F0F8FF;
 }
 
 /* ANIMATES THE NAVBAR COMING INTO VIEW */
@@ -157,6 +169,15 @@ nav.show {
     opacity: 0;
 }
 
+.underneath {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+    line-height: 1em;
+}
+
 /* PROJECT PAGE BUTTONS */
 #projButton {
     bottom:0;
@@ -165,4 +186,21 @@ nav.show {
 }
 #projButton:hover {
     background-color:#4169E1;
+}
+
+
+li a.nav-link.lead {
+    color: black;
+}
+
+li a.nav-link.active.projects {
+    background-color: #F0EAD6 !important;
+    border: 1;
+    border-bottom-color: #F0EAD6;
+}
+
+li a.nav-link.active.schools {
+    background-color: #F0EAD6 !important;
+    border: 1;
+    border-bottom-color: #F0EAD6;
 }
