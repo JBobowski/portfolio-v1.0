@@ -53,6 +53,10 @@ aboutButton.style.display = "none";
     e.preventDefault()
     $(this).tab('show')
   });
+  $('#schoolList a').on('click', function (e) {
+    e.preventDefault()
+    $(this).tab('show')
+  });
 
   $('#icon').click(function() {
     icon1.classList.toggle('a');

@@ -99,6 +99,18 @@ header {
 .choice:hover {
     color: black;
 }
+.emailNav {
+    color: #F0F8FF;
+    line-height: 2.2;
+    text-transform: lowercase;
+    letter-spacing: 1.7px;
+    padding: 4px 0px 4px 32px;
+    text-decoration: none;
+    display: block;
+}
+.emailNav:hover {
+    color: #F0F8FF;
+}
 
 /* ANIMATES THE NAVBAR COMING INTO VIEW */
 nav.show {
@@ -182,6 +194,12 @@ li a.nav-link.lead {
 }
 
 li a.nav-link.active.projects {
+    background-color: #F0EAD6 !important;
+    border: 1;
+    border-bottom-color: #F0EAD6;
+}
+
+li a.nav-link.active.schools {
     background-color: #F0EAD6 !important;
     border: 1;
     border-bottom-color: #F0EAD6;
